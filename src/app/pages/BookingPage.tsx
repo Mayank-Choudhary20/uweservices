@@ -1,7 +1,8 @@
 // src/app/pages/BookingPage.tsx
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router";
+import { SEOHead } from "../components/SEOHead";
 import { services } from "../data/services";
 import {
   Calendar,
@@ -59,6 +60,22 @@ export function BookingPage() {
     useState<PaymentMethod>("all");
 
   const { initiatePayment, initiateUPIPayment, isProcessing } = useRazorpay();
+
+  const bookingTitle = service ? `Book ${service.name} | UWe Service` : "Book Service | UWe Service";
+
+  useEffect(() => {
+    document.title = bookingTitle;
+    let metaRobots = document.querySelector('meta[name="robots"]') as HTMLMetaElement | null;
+    if (!metaRobots) {
+      metaRobots = document.createElement("meta");
+      metaRobots.name = "robots";
+      document.head.appendChild(metaRobots);
+    }
+    metaRobots.content = "noindex, follow";
+    return () => {
+      if (metaRobots) metaRobots.content = "index, follow";
+    };
+  }, [bookingTitle]);
 
   const [formData, setFormData] = useState<BookingFormData>({
     name: "",

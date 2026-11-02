@@ -15,6 +15,7 @@ import {
   Building,
 } from "lucide-react";
 import { useState } from "react";
+import { SEOHead } from "../components/SEOHead";
 
 export function ContactUs() {
   const [formData, setFormData] = useState({
@@ -61,6 +62,11 @@ export function ContactUs() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-orange-50">
+      <SEOHead
+        title="Contact UWe Service | Doorstep Home Service Support in MP"
+        description="Get in touch with UWe Service for home service bookings, technician inquiries, and customer support in Hoshangabad & Bhopal. Call +91-9109888774."
+        canonicalUrl="https://uweservices.com/contact"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-orange-500 via-amber-500 to-orange-600 text-white py-16">
         <div className="container mx-auto px-4">

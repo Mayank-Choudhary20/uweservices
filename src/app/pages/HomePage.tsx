@@ -3,12 +3,87 @@ import { Logo } from "../components/Logo";
 import { services } from "../data/services";
 import { ArrowRight, CheckCircle, Clock, Shield, Star } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { SEOHead } from "../components/SEOHead";
 
 export function HomePage() {
   const popularServices = services.filter((s) => s.popular);
 
+  const homeSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://uweservices.com/#organization",
+        "name": "UWe Service",
+        "url": "https://uweservices.com/",
+        "telephone": "+91-9109888774",
+        "email": "support@uweservices.com",
+        "logo": "https://uweservices.com/favicon.svg",
+        "priceRange": "₹₹",
+        "founder": {
+          "@type": "Person",
+          "name": "Mayank Choudhary"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Makan No. 01, Ward No. 42, Post–New Yard, Sai Nagar",
+          "addressLocality": "Meharagaon, Hoshangabad",
+          "addressRegion": "Madhya Pradesh",
+          "postalCode": "461115",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "22.7543889",
+          "longitude": "77.6556563"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "10:00",
+            "closes": "18:00"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Hoshangabad",
+            "sameAs": "https://en.wikipedia.org/wiki/Hoshangabad"
+          },
+          {
+            "@type": "City",
+            "name": "Bhopal",
+            "sameAs": "https://en.wikipedia.org/wiki/Bhopal"
+          },
+          {
+            "@type": "State",
+            "name": "Madhya Pradesh"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/uweservice",
+          "https://www.instagram.com/uweservice",
+          "https://twitter.com/uweservice"
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="w-full">
+      <SEOHead
+        title="UWe Service - Professional Home Services & Repairs in MP"
+        description="Book trusted electricians, plumbers, house cleaners & AC repair in Bhopal & Hoshangabad. Verified experts, fair pricing, and 30-day guarantee."
+        canonicalUrl="https://uweservices.com/"
+        schema={homeSchema}
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-orange-500 via-amber-500 to-orange-600 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>

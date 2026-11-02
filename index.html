@@ -8,13 +8,13 @@
     <title>UWe Service - Professional Home Services at Your Doorstep</title>
     <meta name="title" content="UWe Service - Professional Home Services at Your Doorstep" />
     <meta name="description" content="Book trusted professionals for all your home service needs. Plumbing, Electrical, Cleaning, AC Repair & more. Quality work, fair pricing, guaranteed satisfaction." />
-    <meta name="keywords" content="home services, plumbing, electrical, cleaning, AC repair, home repair, professional services, Bhopal, Madhya Pradesh, India" />
+    <meta name="keywords" content="home services, plumbing, electrical, cleaning, AC repair, home repair, professional services, Bhopal, Hoshangabad, Madhya Pradesh, India" />
     <meta name="author" content="UWe Service - Mayank Choudhary" />
     <meta name="robots" content="index, follow" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#f97316" />
@@ -45,11 +45,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
-    <!-- Google Fonts (Optional - if using custom fonts) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     
-    <!-- Razorpay Checkout Script -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <!-- Razorpay Checkout Script (deferred to avoid render blocking) -->
+    <script defer src="https://checkout.razorpay.com/v1/checkout.js"></script>
     
     <!-- Base Styles -->
     <style>
@@ -117,10 +117,10 @@
     </style>
     
     <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="base-organization-schema">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "HomeAndConstructionBusiness",
         "name": "UWe Service",
         "description": "Professional home services at your doorstep. Plumbing, Electrical, Cleaning, AC Repair & more.",
         "url": "https://uweservices.com",
@@ -156,10 +156,22 @@
         "priceRange": "₹₹",
         "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "UPI"],
         "currenciesAccepted": "INR",
-        "areaServed": {
-          "@type": "State",
-          "name": "Madhya Pradesh"
-        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Hoshangabad",
+            "sameAs": "https://en.wikipedia.org/wiki/Hoshangabad"
+          },
+          {
+            "@type": "City",
+            "name": "Bhopal",
+            "sameAs": "https://en.wikipedia.org/wiki/Bhopal"
+          },
+          {
+            "@type": "State",
+            "name": "Madhya Pradesh"
+          }
+        ],
         "founder": {
           "@type": "Person",
           "name": "Mayank Choudhary"

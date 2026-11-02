@@ -207,7 +207,16 @@ export function Layout() {
             <div className="text-center">
               <h4 className="text-sm font-medium text-white mb-3">Service Areas</h4>
               <p className="text-xs text-gray-500">
-                Currently serving in Madhya Pradesh | Expanding to more cities soon
+                <div className="flex flex-wrap justify-center items-center gap-3 text-xs text-gray-400 mb-2">
+                  <Link to="/locations/hoshangabad" className="hover:text-orange-400 underline underline-offset-4">
+                    Home Services in Hoshangabad
+                  </Link>
+                  <span>•</span>
+                  <Link to="/locations/bhopal" className="hover:text-orange-400 underline underline-offset-4">
+                    Home Services in Bhopal
+                  </Link>
+                </div>
+                Serving verified locations in Madhya Pradesh | Verified doorstep delivery
               </p>
             </div>
           </div>

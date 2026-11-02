@@ -6,6 +6,7 @@ import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { TermsAndConditions } from "./pages/TermsAndConditions";
 import { RefundPolicy } from "./pages/RefundPolicy";
 import { ContactUs } from "./pages/ContactUs";
+import { LocationPage } from "./pages/LocationPage";
 import { Layout } from "./components/Layout";
 
 export const router = createBrowserRouter([
@@ -16,11 +17,13 @@ export const router = createBrowserRouter([
       { index: true, Component: HomePage },
       { path: "services", Component: ServicesPage },
       { path: "services/:serviceId", Component: ServicesPage },
+      { path: "locations/:citySlug", Component: LocationPage },
       { path: "book/:serviceId", Component: BookingPage },
       { path: "privacy-policy", Component: PrivacyPolicy },
       { path: "terms-and-conditions", Component: TermsAndConditions },
       { path: "refund-policy", Component: RefundPolicy },
       { path: "contact", Component: ContactUs },
+      { path: "*", Component: ServicesPage },
     ],
   },
 ]);

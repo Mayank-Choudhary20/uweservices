@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { SEOHead } from "../components/SEOHead";
 import {
   RefreshCw,
   Clock,
@@ -17,6 +18,11 @@ import {
 export function RefundPolicy() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-orange-50 py-12">
+      <SEOHead
+        title="Refund & Cancellation Policy | UWe Service"
+        description="Understand our customer-friendly refund and cancellation policies for home service appointments on UWe Service."
+        canonicalUrl="https://uweservices.com/refund-policy"
+      />
       <div className="container mx-auto px-4 max-w-4xl">
         <Link
           to="/"

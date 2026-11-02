@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { SEOHead } from "../components/SEOHead";
 import { 
   Shield, 
   CreditCard, 
@@ -15,6 +16,11 @@ import {
 export function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-orange-50 py-12">
+      <SEOHead
+        title="Privacy Policy | UWe Service"
+        description="Learn how UWe Service collects, protects, and handles your personal information when booking home services."
+        canonicalUrl="https://uweservices.com/privacy-policy"
+      />
       <div className="container mx-auto px-4 max-w-4xl">
         <Link
           to="/"

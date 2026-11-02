@@ -1,0 +1,17 @@
+# Robots.txt for UWe Service (https://uweservices.com)
+User-agent: *
+Allow: /
+Disallow: /book/
+
+# AI Search & Answer Engine Citability
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# XML Sitemap
+Sitemap: https://uweservices.com/sitemap.xml
