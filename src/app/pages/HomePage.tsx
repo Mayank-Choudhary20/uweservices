@@ -63,6 +63,11 @@ export function HomePage() {
             "sameAs": "https://en.wikipedia.org/wiki/Bhopal"
           },
           {
+            "@type": "City",
+            "name": "Pune",
+            "sameAs": "https://en.wikipedia.org/wiki/Pune"
+          },
+          {
             "@type": "State",
             "name": "Madhya Pradesh"
           }
@@ -79,8 +84,8 @@ export function HomePage() {
   return (
     <div className="w-full">
       <SEOHead
-        title="UWe Service - Professional Home Services & Repairs in MP"
-        description="Book trusted electricians, plumbers, house cleaners & AC repair in Bhopal & Hoshangabad. Verified experts, fair pricing, and 30-day guarantee."
+        title="UWe Service - Professional Home Services | Bhopal, Hoshangabad & Pune"
+        description="Book trusted electricians, plumbers, house cleaners & AC repair in Bhopal, Hoshangabad & Pune. Verified professionals, fair pricing, doorstep service."
         canonicalUrl="https://uweservices.com/"
         schema={homeSchema}
       />

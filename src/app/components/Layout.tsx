@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation } from "react-router";
+﻿import { Outlet, Link, useLocation } from "react-router";
 import { Logo } from "./Logo";
 import { Menu, X, Home, Briefcase, Phone, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
@@ -10,6 +10,7 @@ export function Layout() {
   const navItems = [
     { path: "/", label: "Home", icon: Home },
     { path: "/services", label: "Services", icon: Briefcase },
+    { path: "/locations", label: "Locations", icon: MapPin },
     { path: "/contact", label: "Contact", icon: Mail },
   ];
 
@@ -193,9 +194,9 @@ export function Layout() {
                   <MapPin size={16} className="text-orange-400 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-400">
                     Makan No. 01, Ward No. 42,<br />
-                    Post–New Yard, Sai Nagar,<br />
+                    Postâ€“New Yard, Sai Nagar,<br />
                     Meharagaon, Hoshangabad,<br />
-                    MP – 461115, India
+                    MP â€“ 461115, India
                   </span>
                 </li>
               </ul>
@@ -211,12 +212,16 @@ export function Layout() {
                   <Link to="/locations/hoshangabad" className="hover:text-orange-400 underline underline-offset-4">
                     Home Services in Hoshangabad
                   </Link>
-                  <span>•</span>
+                  <span>â€¢</span>
                   <Link to="/locations/bhopal" className="hover:text-orange-400 underline underline-offset-4">
                     Home Services in Bhopal
                   </Link>
+                  <span>&bull;</span>
+                  <Link to="/locations/pune" className="hover:text-orange-400 underline underline-offset-4">
+                    Home Services in Pune
+                  </Link>
                 </div>
-                Serving verified locations in Madhya Pradesh | Verified doorstep delivery
+                Serving Hoshangabad, Bhopal (Madhya Pradesh) &amp; expanding to Pune, Maharashtra | Verified doorstep delivery
               </p>
             </div>
           </div>
@@ -225,7 +230,7 @@ export function Layout() {
           <div className="border-t border-gray-800 pt-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-gray-500">
-                © 2026 UWe Service. All rights reserved.
+                Â© 2026 UWe Service. All rights reserved.
               </p>
               <div className="flex items-center gap-4">
                 <a 

@@ -7,6 +7,7 @@ import { TermsAndConditions } from "./pages/TermsAndConditions";
 import { RefundPolicy } from "./pages/RefundPolicy";
 import { ContactUs } from "./pages/ContactUs";
 import { LocationPage } from "./pages/LocationPage";
+import { LocationsHubPage } from "./pages/LocationsHubPage";
 import { Layout } from "./components/Layout";
 
 export const router = createBrowserRouter([
@@ -17,6 +18,7 @@ export const router = createBrowserRouter([
       { index: true, Component: HomePage },
       { path: "services", Component: ServicesPage },
       { path: "services/:serviceId", Component: ServicesPage },
+      { path: "locations", Component: LocationsHubPage },
       { path: "locations/:citySlug", Component: LocationPage },
       { path: "book/:serviceId", Component: BookingPage },
       { path: "privacy-policy", Component: PrivacyPolicy },

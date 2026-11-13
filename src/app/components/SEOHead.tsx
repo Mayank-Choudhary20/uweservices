@@ -44,6 +44,8 @@ export function SEOHead({
     setMetaTag('meta[property="og:url"]', "property", "og:url", canonicalUrl);
     setMetaTag('meta[property="og:type"]', "property", "og:type", ogType);
     setMetaTag('meta[property="og:image"]', "property", "og:image", ogImage);
+    setMetaTag('meta[property="og:locale"]', "property", "og:locale", "en_IN");
+    setMetaTag('meta[property="og:site_name"]', "property", "og:site_name", "UWe Service");
 
     // 4. Twitter Tags
     setMetaTag('meta[property="twitter:title"]', "property", "twitter:title", title);

@@ -26,20 +26,32 @@ export function LocationPage() {
           <Building className="mx-auto text-orange-500 mb-4" size={48} />
           <h1 className="text-2xl font-bold text-gray-900 mb-2">City Not Found</h1>
           <p className="text-gray-600 mb-6">
-            We currently provide verified services in Hoshangabad and Bhopal, Madhya Pradesh.
+            We currently provide verified services in Hoshangabad, Bhopal, and Pune. Select a city below or browse all our service areas.
           </p>
           <div className="flex flex-col gap-3">
             <Link
-              to="/locations/hoshangabad"
+              to="/locations/pune"
               className="px-6 py-2.5 bg-orange-600 text-white rounded-full font-medium hover:bg-orange-700 transition-colors"
             >
-              View Hoshangabad Services
+              Home Services in Pune
+            </Link>
+            <Link
+              to="/locations/hoshangabad"
+              className="px-6 py-2.5 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors"
+            >
+              Home Services in Hoshangabad
             </Link>
             <Link
               to="/locations/bhopal"
               className="px-6 py-2.5 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors"
             >
-              View Bhopal Services
+              Home Services in Bhopal
+            </Link>
+            <Link
+              to="/locations"
+              className="px-6 py-2.5 border border-orange-500 text-orange-600 rounded-full font-medium hover:bg-orange-50 transition-colors"
+            >
+              View All Service Areas
             </Link>
           </div>
         </div>
