@@ -43,7 +43,7 @@ export function HomePage() {
     },
     {
       question: "How can customers book a plumber or electrician in Pune?",
-      answer: "Customers can browse our services on uweservices.com, select their required repair (e.g. plumbing or electrical), pick a convenient date and time, and confirm their booking. Alternatively, bookings can be made directly via our customer Android app or by calling +91-9109888774."
+      answer: "Customers can browse our services on uweservices.com, select their required repair (e.g. plumbing or electrical), pick a convenient date and time, and confirm their booking. Alternatively, bookings can be made directly via our customer Android app or by calling +91-9617671251."
     },
     {
       question: "How can customers check service availability in their Pune locality?",
@@ -72,7 +72,7 @@ export function HomePage() {
         "name": "UWE Services",
         "alternateName": ["UWe Service", "UWE Home Services"],
         "url": "https://uweservices.com/",
-        "telephone": "+91-9109888774",
+        "telephone": "+91-9617671251",
         "email": "support@uweservices.com",
         "logo": "https://uweservices.com/favicon.svg",
         "priceRange": "₹₹",
@@ -477,10 +477,10 @@ export function HomePage() {
               <ArrowRight size={20} />
             </Link>
             <a
-              href="tel:+919109888774"
+              href="tel:+919617671251"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-orange-700 text-white rounded-full font-semibold hover:bg-orange-800 transition-all"
             >
-              Call +91-9109888774
+              Call +91-9617671251
             </a>
           </div>
         </div>

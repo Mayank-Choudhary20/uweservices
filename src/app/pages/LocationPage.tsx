@@ -64,7 +64,7 @@ export function LocationPage() {
         "@id": `${canonicalUrl}#localbusiness`,
         "name": `UWE Services - ${location.name}`,
         "url": canonicalUrl,
-        "telephone": "+91-9109888774",
+        "telephone": "+91-9617671251",
         "email": "support@uweservices.com",
         "description": location.description,
         "address": {
@@ -173,11 +173,11 @@ export function LocationPage() {
 
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="tel:+919109888774"
+                href="tel:+919617671251"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-orange-600 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-md"
               >
                 <Phone size={18} />
-                Call +91-9109888774
+                Call +91-9617671251
               </a>
               <div className="inline-flex items-center gap-2 text-sm text-orange-100">
                 <Clock size={16} />

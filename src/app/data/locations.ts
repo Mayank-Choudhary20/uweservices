@@ -54,7 +54,7 @@ export const locations: LocationInfo[] = [
       },
       {
         question: "How do customers check service availability and book online in Pune?",
-        answer: "Browse our services online, select your required service (e.g., plumbing or AC repair), enter your Pune address or PIN code, choose a convenient date and time slot, and confirm. You can also call +91-9109888774 or use our official Android customer app.",
+        answer: "Browse our services online, select your required service (e.g., plumbing or AC repair), enter your Pune address or PIN code, choose a convenient date and time slot, and confirm. You can also call +91-9617671251 or use our official Android customer app.",
       },
       {
         question: "Are UWE Services technicians in Pune background verified?",

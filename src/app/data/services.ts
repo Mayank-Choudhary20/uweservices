@@ -87,7 +87,7 @@ export const services: Service[] = [
       },
       {
         question: "What should I do if a switchboard or wire starts sparking?",
-        answer: "Please immediately turn off your home's main MCB breaker on the distribution board to isolate the power, then book our emergency electrical visit or call our helpline directly at +91-9109888774.",
+        answer: "Please immediately turn off your home's main MCB breaker on the distribution board to isolate the power, then book our emergency electrical visit or call our helpline directly at +91-9617671251.",
       },
       {
         question: "Can an electrician install appliances bought separately?",

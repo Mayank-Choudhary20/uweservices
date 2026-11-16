@@ -52,7 +52,7 @@ export function Layout() {
                 );
               })}
               <a
-                href="tel:+919109888774"
+                href="tel:+919617671251"
                 className="flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-full hover:shadow-lg transition-all hover:scale-105"
               >
                 <Phone size={18} />
@@ -93,11 +93,11 @@ export function Layout() {
                 );
               })}
               <a
-                href="tel:+919109888774"
+                href="tel:+919617671251"
                 className="flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-lg font-medium"
               >
                 <Phone size={18} />
-                Call: +91-9109888774
+                Call: +91-9617671251
               </a>
             </div>
           )}
@@ -214,8 +214,8 @@ export function Layout() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone size={16} className="text-orange-400 flex-shrink-0" />
-                  <a href="tel:+919109888774" className="hover:text-orange-400 transition-colors">
-                    +91-9109888774
+                  <a href="tel:+919617671251" className="hover:text-orange-400 transition-colors">
+                    +91-9617671251
                   </a>
                 </li>
                 <li className="flex items-start gap-2">
@@ -286,7 +286,7 @@ export function Layout() {
                   <Mail size={18} />
                 </a>
                 <a 
-                  href="tel:+919109888774" 
+                  href="tel:+919617671251" 
                   className="text-gray-500 hover:text-orange-400 transition-colors"
                   title="Call Us"
                 >

@@ -24,7 +24,7 @@ export function ServicesPage() {
           "@id": `https://uweservices.com/#${selectedService.id}`,
           "name": `UWE Services - ${selectedService.name}`,
           "url": canonicalUrl,
-          "telephone": "+91-9109888774",
+          "telephone": "+91-9617671251",
           "priceRange": selectedService.price,
           "address": {
             "@type": "PostalAddress",
@@ -183,11 +183,11 @@ export function ServicesPage() {
                       <ArrowRight size={18} />
                     </Link>
                     <a
-                      href="tel:+919109888774"
+                      href="tel:+919617671251"
                       className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-orange-500 text-orange-600 rounded-full font-semibold hover:bg-orange-50 transition-all"
                     >
                       <Phone size={18} />
-                      Call +91-9109888774
+                      Call +91-9617671251
                     </a>
                   </div>
 

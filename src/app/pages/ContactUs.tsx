@@ -64,7 +64,7 @@ export function ContactUs() {
     <div className="min-h-screen bg-gradient-to-b from-white to-orange-50">
       <SEOHead
         title="Contact UWE Services | Doorstep Home Service Support in Pune"
-        description="Get in touch with UWE Services for home service bookings, technician inquiries, and customer support in Pune & PCMC. Call +91-9109888774."
+        description="Get in touch with UWE Services for home service bookings, technician inquiries, and customer support in Pune & PCMC. Call +91-9617671251."
         canonicalUrl="https://uweservices.com/contact"
         schema={{
           "@context": "https://schema.org",
@@ -125,10 +125,10 @@ export function ContactUs() {
               <h3 className="text-lg font-bold text-gray-900 mb-2">Call Us</h3>
               <p className="text-gray-600 text-sm mb-3">Mon-Sat, 9 AM - 8 PM</p>
               <a
-                href="tel:+919109888774"
+                href="tel:+919617671251"
                 className="text-green-600 hover:text-green-700 font-medium"
               >
-                +91-9109888774
+                +91-9617671251
               </a>
             </div>
 
@@ -368,10 +368,10 @@ export function ContactUs() {
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                       <a
-                        href="tel:+919109888774"
+                        href="tel:+919617671251"
                         className="text-gray-600 hover:text-green-600 transition-colors"
                       >
-                        +91-9109888774
+                        +91-9617671251
                       </a>
                     </div>
                   </div>
@@ -466,11 +466,11 @@ export function ContactUs() {
                   assistance.
                 </p>
                 <a
-                  href="tel:+919109888774"
+                  href="tel:+919617671251"
                   className="inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 transition-colors"
                 >
                   <Phone size={18} />
-                  Call Now: +91-9109888774
+                  Call Now: +91-9617671251
                 </a>
               </div>
 
@@ -557,11 +557,11 @@ export function ContactUs() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+919109888774"
+              href="tel:+919617671251"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-orange-600 rounded-full font-semibold hover:shadow-xl transition-all hover:scale-105"
             >
               <Phone size={20} />
-              +91-9109888774
+              +91-9617671251
             </a>
             <a
               href="mailto:support@uweservices.com"

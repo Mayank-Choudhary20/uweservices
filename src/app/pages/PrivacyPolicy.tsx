@@ -358,10 +358,10 @@ export function PrivacyPolicy() {
                   <div>
                     <p className="text-sm text-gray-500">Phone</p>
                     <a 
-                      href="tel:+919109888774" 
+                      href="tel:+919617671251" 
                       className="text-orange-600 hover:text-orange-700 font-medium"
                     >
-                      +91-9109888774
+                      +91-9617671251
                     </a>
                   </div>
                 </div>

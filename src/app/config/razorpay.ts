@@ -50,7 +50,7 @@ export const COMPANY_DETAILS = {
   name: "UWe Service",
   operator: "Mayank Choudhary",
   email: "support@uweservices.com",
-  phone: "+919109888774",
+  phone: "+919617671251",
   address: {
     line1: "Makan No. 01, Ward No. 42",
     line2: "Post–New Yard, Sai Nagar",

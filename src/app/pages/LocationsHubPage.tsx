@@ -65,11 +65,11 @@ export function LocationsHubPage() {
               Browse our verified service areas and book trusted home professionals — electricians, plumbers, cleaners, AC technicians, and more — directly to your doorstep.
             </p>
             <a
-              href="tel:+919109888774"
+              href="tel:+919617671251"
               className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-orange-600 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-md"
             >
               <Phone size={18} />
-              Call +91-9109888774
+              Call +91-9617671251
             </a>
           </div>
         </div>
@@ -169,11 +169,11 @@ export function LocationsHubPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+919109888774"
+              href="tel:+919617671251"
               className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-orange-600 rounded-full font-semibold hover:bg-orange-50 transition-all shadow-md"
             >
               <Phone size={18} />
-              Call +91-9109888774
+              Call +91-9617671251
             </a>
             <Link
               to="/services"
