@@ -29,8 +29,8 @@ export function LocationsHubPage() {
       },
       {
         "@type": "WebPage",
-        "name": "Home Service Areas | UWe Service",
-        "description": "Find UWe Service home service coverage in Hoshangabad, Bhopal and Pune. Book verified electricians, plumbers, cleaning professionals, AC technicians and more.",
+        "name": "Home Service Areas in Pune | UWE Services",
+        "description": "Explore UWE Services coverage across Pune and PCMC. Book verified electricians, plumbers, cleaning professionals, AC technicians and more.",
         "url": canonicalUrl
       }
     ]
@@ -39,8 +39,8 @@ export function LocationsHubPage() {
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-white to-orange-50">
       <SEOHead
-        title="Home Service Areas | Hoshangabad, Bhopal & Pune | UWe Service"
-        description="Find UWe Service home service coverage in Hoshangabad, Bhopal and Pune. Book verified electricians, plumbers, cleaning professionals, AC technicians and more."
+        title="Home Service Areas in Pune | UWE Services"
+        description="Explore UWE Services coverage across Pune and PCMC. Book verified electricians, plumbers, cleaning professionals, AC technicians and more."
         canonicalUrl={canonicalUrl}
         schema={hubSchema}
       />
@@ -165,7 +165,7 @@ export function LocationsHubPage() {
         <div className="bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl p-8 md:p-10 text-white text-center">
           <h2 className="text-2xl font-bold mb-3">Can't Find Your City?</h2>
           <p className="text-orange-100 mb-6 max-w-md mx-auto">
-            UWe Service is expanding to new cities. Call us to check whether we can help in your area, or use the booking form to submit a service request.
+            UWE Services is expanding across Pune and PCMC. Call us to confirm coverage for your specific locality, or use the booking form to submit a service request.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

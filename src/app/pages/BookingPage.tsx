@@ -61,7 +61,7 @@ export function BookingPage() {
 
   const { initiatePayment, initiateUPIPayment, isProcessing } = useRazorpay();
 
-  const bookingTitle = service ? `Book ${service.name} | UWe Service` : "Book Service | UWe Service";
+  const bookingTitle = service ? `Book ${service.name} | UWE Services` : "Book Service | UWE Services";
 
   useEffect(() => {
     document.title = bookingTitle;
@@ -1029,7 +1029,7 @@ export function BookingPage() {
                         className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${
                           formErrors.city ? "border-red-500" : "border-gray-300"
                         }`}
-                        placeholder="City"
+                        placeholder="City (e.g. Pune, PCMC)"
                       />
                       {formErrors.city && (
                         <p className="text-red-500 text-sm mt-1">

@@ -20,8 +20,8 @@ export function TermsAndConditions() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-orange-50 py-12">
       <SEOHead
-        title="Terms & Conditions | UWe Service"
-        description="Review the terms and conditions governing home service bookings, technician dispatch, and customer service agreements on UWe Service."
+        title="Terms & Conditions | UWE Services"
+        description="Review the terms and conditions governing home service bookings, technician dispatch, and customer service agreements on UWE Services."
         canonicalUrl="https://uweservices.com/terms-and-conditions"
       />
       <div className="container mx-auto px-4 max-w-4xl">

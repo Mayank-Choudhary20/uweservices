@@ -1,6 +1,6 @@
 ﻿import { Outlet, Link, useLocation } from "react-router";
 import { Logo } from "./Logo";
-import { Menu, X, Home, Briefcase, Phone, Mail, MapPin } from "lucide-react";
+import { Menu, X, Home, Briefcase, Phone, Mail, MapPin, Smartphone } from "lucide-react";
 import { useState } from "react";
 
 export function Layout() {
@@ -10,7 +10,7 @@ export function Layout() {
   const navItems = [
     { path: "/", label: "Home", icon: Home },
     { path: "/services", label: "Services", icon: Briefcase },
-    { path: "/locations", label: "Locations", icon: MapPin },
+    { path: "/locations/pune", label: "Pune Hub", icon: MapPin },
     { path: "/contact", label: "Contact", icon: Mail },
   ];
 
@@ -26,8 +26,8 @@ export function Layout() {
                 <Logo size={40} />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-xl text-gray-900">UWe Service</span>
-                <span className="text-xs text-orange-600">You + We = Done</span>
+                <span className="font-bold text-xl text-gray-900">UWE Services</span>
+                <span className="text-xs text-orange-600 font-medium">Pune Doorstep Services</span>
               </div>
             </Link>
 
@@ -64,6 +64,7 @@ export function Layout() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-2 text-gray-600 hover:text-orange-500"
+              aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -93,10 +94,10 @@ export function Layout() {
               })}
               <a
                 href="tel:+919109888774"
-                className="flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-lg"
+                className="flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-lg font-medium"
               >
                 <Phone size={18} />
-                Call Now: +91-9109888774
+                Call: +91-9109888774
               </a>
             </div>
           )}
@@ -118,12 +119,12 @@ export function Layout() {
               <div className="flex items-center gap-3 mb-4">
                 <Logo size={32} />
                 <div>
-                  <div className="font-bold text-white">UWe Service</div>
+                  <div className="font-bold text-white">UWE Services</div>
                   <div className="text-xs text-orange-400">Professional Home Services</div>
                 </div>
               </div>
-              <p className="text-sm text-gray-400 mb-4">
-                Your trusted partner for all home service needs. Quality work, fair pricing, guaranteed satisfaction.
+              <p className="text-sm text-gray-400 mb-4 leading-relaxed">
+                Your trusted doorstep partner for plumbing, electrical, cleaning, and AC repair across Pune and PCMC.
               </p>
               <p className="text-xs text-gray-500">
                 Operated by Mayank Choudhary
@@ -141,7 +142,12 @@ export function Layout() {
                 </li>
                 <li>
                   <Link to="/services" className="hover:text-orange-400 transition-colors">
-                    Services
+                    All Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations/pune" className="hover:text-orange-400 transition-colors">
+                    Pune Service Areas
                   </Link>
                 </li>
                 <li>
@@ -152,22 +158,44 @@ export function Layout() {
               </ul>
             </div>
 
-            {/* Legal Links */}
+            {/* Mobile Apps & Trust */}
             <div className="md:col-span-1">
-              <h3 className="font-semibold text-white mb-4">Legal</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="font-semibold text-white mb-4">Android Apps</h3>
+              <ul className="space-y-3 text-sm">
                 <li>
-                  <Link to="/privacy-policy" className="hover:text-orange-400 transition-colors">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.uwe.homeservices"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-300 hover:text-orange-400 transition-colors"
+                  >
+                    <Smartphone size={16} className="text-orange-400" />
+                    <span>UWE Customer App</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.uweservices.partner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-300 hover:text-orange-400 transition-colors"
+                  >
+                    <Briefcase size={16} className="text-orange-400" />
+                    <span>UWE Partner App</span>
+                  </a>
+                </li>
+                <li className="pt-2">
+                  <Link to="/privacy-policy" className="text-xs text-gray-400 hover:text-orange-400 block">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/terms-and-conditions" className="hover:text-orange-400 transition-colors">
-                    Terms & Conditions
+                  <Link to="/terms-and-conditions" className="text-xs text-gray-400 hover:text-orange-400 block">
+                    Terms &amp; Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link to="/refund-policy" className="hover:text-orange-400 transition-colors">
+                  <Link to="/refund-policy" className="text-xs text-gray-400 hover:text-orange-400 block">
                     Refund Policy
                   </Link>
                 </li>
@@ -176,7 +204,7 @@ export function Layout() {
 
             {/* Contact Info */}
             <div className="md:col-span-1">
-              <h3 className="font-semibold text-white mb-4">Contact Info</h3>
+              <h3 className="font-semibold text-white mb-4">Contact &amp; Hub</h3>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center gap-2">
                   <Mail size={16} className="text-orange-400 flex-shrink-0" />
@@ -192,11 +220,12 @@ export function Layout() {
                 </li>
                 <li className="flex items-start gap-2">
                   <MapPin size={16} className="text-orange-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-400">
-                    Makan No. 01, Ward No. 42,<br />
-                    Postâ€“New Yard, Sai Nagar,<br />
-                    Meharagaon, Hoshangabad,<br />
-                    MP â€“ 461115, India
+                  <span className="text-gray-400 text-xs leading-relaxed">
+                    <strong className="text-white text-sm">Primary Service Area:</strong><br />
+                    Pune &amp; PCMC, Maharashtra<br />
+                    <span className="text-gray-500 mt-1 block">
+                      Registered Office: Makan No. 01, Ward No. 42, Post–New Yard, Sai Nagar, Meharagaon, Hoshangabad, MP – 461115
+                    </span>
                   </span>
                 </li>
               </ul>
@@ -206,22 +235,38 @@ export function Layout() {
           {/* Footer Middle - Service Areas */}
           <div className="border-t border-gray-800 py-6 mb-6">
             <div className="text-center">
-              <h4 className="text-sm font-medium text-white mb-3">Service Areas</h4>
+              <h4 className="text-sm font-medium text-white mb-3">Pune Service Coverage</h4>
+              <div className="flex flex-wrap justify-center items-center gap-2 text-xs text-gray-400 mb-2">
+                <Link to="/locations/pune" className="text-orange-400 font-semibold underline underline-offset-4 hover:text-orange-300">
+                  Home Services in Pune
+                </Link>
+                <span>•</span>
+                <span>Hinjawadi</span>
+                <span>•</span>
+                <span>Wakad</span>
+                <span>•</span>
+                <span>Baner</span>
+                <span>•</span>
+                <span>Aundh</span>
+                <span>•</span>
+                <span>Kothrud</span>
+                <span>•</span>
+                <span>Hadapsar</span>
+                <span>•</span>
+                <span>Kharadi</span>
+                <span>•</span>
+                <span>Viman Nagar</span>
+                <span>•</span>
+                <span>Wagholi</span>
+                <span>•</span>
+                <span>Pimple Saudagar</span>
+                <span>•</span>
+                <span>Pimpri</span>
+                <span>•</span>
+                <span>Chinchwad</span>
+              </div>
               <p className="text-xs text-gray-500">
-                <div className="flex flex-wrap justify-center items-center gap-3 text-xs text-gray-400 mb-2">
-                  <Link to="/locations/hoshangabad" className="hover:text-orange-400 underline underline-offset-4">
-                    Home Services in Hoshangabad
-                  </Link>
-                  <span>â€¢</span>
-                  <Link to="/locations/bhopal" className="hover:text-orange-400 underline underline-offset-4">
-                    Home Services in Bhopal
-                  </Link>
-                  <span>&bull;</span>
-                  <Link to="/locations/pune" className="hover:text-orange-400 underline underline-offset-4">
-                    Home Services in Pune
-                  </Link>
-                </div>
-                Serving Hoshangabad, Bhopal (Madhya Pradesh) &amp; expanding to Pune, Maharashtra | Verified doorstep delivery
+                Serving homeowners across Pune &amp; Pimpri-Chinchwad Metropolitan Region, Maharashtra | Verified doorstep delivery
               </p>
             </div>
           </div>
@@ -230,7 +275,7 @@ export function Layout() {
           <div className="border-t border-gray-800 pt-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-gray-500">
-                Â© 2026 UWe Service. All rights reserved.
+                © 2026 UWE Services. All rights reserved.
               </p>
               <div className="flex items-center gap-4">
                 <a 
@@ -249,7 +294,7 @@ export function Layout() {
                 </a>
               </div>
               <p className="text-xs text-gray-500">
-                Trusted by thousands of homeowners across India
+                On-demand doorstep home repairs in Pune
               </p>
             </div>
           </div>

@@ -22,7 +22,7 @@ export function ServicesPage() {
         {
           "@type": selectedService.schemaType || "HomeAndConstructionBusiness",
           "@id": `https://uweservices.com/#${selectedService.id}`,
-          "name": `UWe Service - ${selectedService.name}`,
+          "name": `UWE Services - ${selectedService.name}`,
           "url": canonicalUrl,
           "telephone": "+91-9109888774",
           "priceRange": selectedService.price,
@@ -35,9 +35,9 @@ export function ServicesPage() {
             "addressCountry": "IN"
           },
           "areaServed": [
-            { "@type": "City", "name": "Hoshangabad" },
-            { "@type": "City", "name": "Bhopal" },
-            { "@type": "State", "name": "Madhya Pradesh" }
+            { "@type": "City", "name": "Pune", "sameAs": "https://en.wikipedia.org/wiki/Pune" },
+            { "@type": "AdministrativeArea", "name": "Pimpri-Chinchwad", "sameAs": "https://en.wikipedia.org/wiki/Pimpri-Chinchwad" },
+            { "@type": "State", "name": "Maharashtra" }
           ]
         },
         {
@@ -48,12 +48,12 @@ export function ServicesPage() {
           "description": selectedService.description,
           "provider": {
             "@type": "LocalBusiness",
-            "name": "UWe Service",
+            "name": "UWE Services",
             "url": "https://uweservices.com"
           },
           "areaServed": {
-            "@type": "State",
-            "name": "Madhya Pradesh"
+            "@type": "City",
+            "name": "Pune"
           },
           "offers": {
             "@type": "Offer",
@@ -131,7 +131,7 @@ export function ServicesPage() {
               <div className="relative h-72 md:h-full min-h-[320px]">
                 <ImageWithFallback
                   src={selectedService.image}
-                  alt={`${selectedService.name} professional service in Madhya Pradesh`}
+                  alt={`${selectedService.name} professional service in Pune`}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-6 left-6 bg-white rounded-full p-4 shadow-lg border border-orange-100">
@@ -200,6 +200,9 @@ export function ServicesPage() {
                       <CheckCircle className="text-green-500" size={18} />
                       30-Day Workmanship Guarantee
                     </div>
+                    <Link to="/locations/pune" className="flex items-center gap-1 text-orange-600 hover:underline font-medium">
+                      Doorstep Service in Pune &amp; PCMC →
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -229,7 +232,7 @@ export function ServicesPage() {
           {/* How It Works Section */}
           <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-orange-100 mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              How UWe Service Works
+              How UWE Services Works
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center space-y-3">
@@ -284,7 +287,7 @@ export function ServicesPage() {
           <div className="bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl font-bold mb-1">Need help with something else?</h3>
-              <p className="text-orange-100 text-sm">Explore our other home maintenance and repair services across MP.</p>
+              <p className="text-orange-100 text-sm">Explore our other verified home maintenance and repair services across Pune &amp; PCMC.</p>
             </div>
             <Link
               to="/services"
@@ -302,8 +305,8 @@ export function ServicesPage() {
   const directorySchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "UWe Service - Home Services Directory",
-    "description": "Directory of professional home maintenance and repair services available in Madhya Pradesh.",
+    "name": "UWE Services - Home Services Directory",
+    "description": "Directory of professional home maintenance and repair services available in Pune.",
     "itemListElement": services.map((s, index) => ({
       "@type": "ListItem",
       "position": index + 1,
@@ -315,8 +318,8 @@ export function ServicesPage() {
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-white to-orange-50">
       <SEOHead
-        title="Professional Home Services & Doorstep Repairs in MP | UWe Service"
-        description="Book verified plumbers, electricians, AC repair, house cleaning, and carpenters in Bhopal & Hoshangabad. Fast, transparent pricing and doorstep delivery."
+        title="Professional Home Services & Doorstep Repairs in Pune | UWE Services"
+        description="Book verified plumbers, electricians, AC repair, house cleaning, and carpenters in Pune & PCMC. Fast, transparent pricing and doorstep delivery."
         canonicalUrl="https://uweservices.com/services"
         schema={directorySchema}
       />
@@ -327,7 +330,7 @@ export function ServicesPage() {
             All Our Home Services
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Professional home maintenance and repairs delivered by verified experts in Madhya Pradesh
+            Professional home maintenance and repairs delivered by verified experts in Pune &amp; PCMC
           </p>
         </div>
 
@@ -342,7 +345,7 @@ export function ServicesPage() {
                 <div className="relative h-48 overflow-hidden">
                   <ImageWithFallback
                     src={service.image}
-                    alt={`${service.name} in Madhya Pradesh`}
+                    alt={`${service.name} in Pune`}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4 bg-white rounded-full p-3 shadow-md">

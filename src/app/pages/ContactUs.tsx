@@ -63,9 +63,16 @@ export function ContactUs() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-orange-50">
       <SEOHead
-        title="Contact UWe Service | Doorstep Home Service Support in MP"
-        description="Get in touch with UWe Service for home service bookings, technician inquiries, and customer support in Hoshangabad & Bhopal. Call +91-9109888774."
+        title="Contact UWE Services | Doorstep Home Service Support in Pune"
+        description="Get in touch with UWE Services for home service bookings, technician inquiries, and customer support in Pune & PCMC. Call +91-9109888774."
         canonicalUrl="https://uweservices.com/contact"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact UWE Services",
+          "description": "Customer support and booking assistance for doorstep home services in Pune and PCMC.",
+          "url": "https://uweservices.com/contact"
+        }}
       />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-orange-500 via-amber-500 to-orange-600 text-white py-16">
@@ -130,8 +137,8 @@ export function ContactUs() {
               <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <MapPin className="text-blue-600" size={28} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Visit Us</h3>
-              <p className="text-gray-600 text-sm mb-3">Our registered office</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Registered Office</h3>
+              <p className="text-gray-600 text-sm mb-3">Corporate / Legal Entity</p>
               <p className="text-blue-600 font-medium text-sm">
                 Meharagaon, Hoshangabad,
                 <br />
@@ -508,30 +515,30 @@ export function ContactUs() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                Our Location
+                Primary Operational &amp; Service Hub
               </h2>
               <p className="text-gray-600">
-                Hoshangabad District, Madhya Pradesh, India
+                Serving Pune &amp; Pimpri-Chinchwad Metropolitan Region, Maharashtra, India
               </p>
             </div>
             <div className="bg-gray-200 rounded-2xl overflow-hidden h-80 relative">
-              {/* Google Maps embed for Hoshangabad/Narmadapuram area */}
+              {/* Google Maps embed for Pune metropolitan area */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117579.04625030095!2d77.6556563!3d22.7543889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963d7e5b0a3c0c1%3A0xdd8d8e06e93b0b7b!2sHoshangabad%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04360341764!2d73.7929267!3d18.5246164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="UWe Service Location - Hoshangabad, Madhya Pradesh"
+                title="UWE Services Service Area - Pune, Maharashtra"
               />
             </div>
             <div className="mt-4 text-center">
               <p className="text-sm text-gray-500">
                 <MapPin className="inline-block mr-1" size={14} />
-                Makan No. 01, Ward No. 42, Post–New Yard, Sai Nagar, Meharagaon,
-                Hoshangabad, MP – 461115
+                Operational Service Hub: Pune, Maharashtra | Registered Office: Makan No. 01, Ward No. 42, Post–New Yard, Sai Nagar, Meharagaon, Hoshangabad, MP – 461115
+
               </p>
             </div>
           </div>

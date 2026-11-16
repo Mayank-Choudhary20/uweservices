@@ -1,17 +1,34 @@
-# Robots.txt for UWe Service (https://uweservices.com)
+# Robots.txt for UWE Services (https://uweservices.com)
+
 User-agent: *
 Allow: /
 Disallow: /book/
 
-# AI Search & Answer Engine Citability
+# Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+Disallow: /book/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /book/
+
+# AI Search & Answer Engine Retrieval Agents (Search & Grounding)
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /book/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /book/
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /book/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /book/
 
 # XML Sitemap
 Sitemap: https://uweservices.com/sitemap.xml

@@ -26,7 +26,7 @@ export function LocationPage() {
           <Building className="mx-auto text-orange-500 mb-4" size={48} />
           <h1 className="text-2xl font-bold text-gray-900 mb-2">City Not Found</h1>
           <p className="text-gray-600 mb-6">
-            We currently provide verified services in Hoshangabad, Bhopal, and Pune. Select a city below or browse all our service areas.
+            We currently provide verified services across Pune and PCMC. Browse our Pune service hub or view all available services.
           </p>
           <div className="flex flex-col gap-3">
             <Link
@@ -36,16 +36,10 @@ export function LocationPage() {
               Home Services in Pune
             </Link>
             <Link
-              to="/locations/hoshangabad"
+              to="/services"
               className="px-6 py-2.5 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors"
             >
-              Home Services in Hoshangabad
-            </Link>
-            <Link
-              to="/locations/bhopal"
-              className="px-6 py-2.5 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors"
-            >
-              Home Services in Bhopal
+              Browse All Services
             </Link>
             <Link
               to="/locations"
@@ -68,7 +62,7 @@ export function LocationPage() {
       {
         "@type": "HomeAndConstructionBusiness",
         "@id": `${canonicalUrl}#localbusiness`,
-        "name": `UWe Service - ${location.name}`,
+        "name": `UWE Services - ${location.name}`,
         "url": canonicalUrl,
         "telephone": "+91-9109888774",
         "email": "support@uweservices.com",
@@ -120,8 +114,8 @@ export function LocationPage() {
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Services",
-              "item": "https://uweservices.com/services"
+              "name": "Locations",
+              "item": "https://uweservices.com/locations"
             },
           {
             "@type": "ListItem",
@@ -160,7 +154,7 @@ export function LocationPage() {
           <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-orange-100">
             <Link to="/" className="hover:underline">Home</Link>
             <ChevronRight size={14} />
-            <Link to="/services" className="hover:underline">Services</Link>
+            <Link to="/locations" className="hover:underline">Locations</Link>
             <ChevronRight size={14} />
             <span className="font-semibold text-white">{location.name}</span>
           </nav>
@@ -275,7 +269,7 @@ export function LocationPage() {
         {/* Why Choose UWe Service */}
         <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-orange-100 mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Why {location.name} Residents Trust UWe Service
+            Why {location.name} Residents Trust UWE Services
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-5 rounded-xl bg-orange-50/50 border border-orange-100">

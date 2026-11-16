@@ -32,8 +32,8 @@ export const services: Service[] = [
     image: "https://images.unsplash.com/photo-1613839397604-65fffe7fc3d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwbHVtYmVyJTIwZml4aW5nJTIwc2lua3xlbnwxfHx8fDE3NzU2MzU2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     features: ["Leak repairs", "Pipe installation", "Drain cleaning", "24/7 emergency service"],
     popular: true,
-    metaTitle: "Plumbing Services & Plumber Near Me | UWe Service",
-    metaDescription: "Book verified plumbers for pipe leak repairs, tap fitting, drain unblocking, and water heater installation. Fast doorstep service in Hoshangabad, Bhopal & Pune.",
+    metaTitle: "Plumbing Services & Plumber Near Me in Pune | UWE Services",
+    metaDescription: "Book verified plumbers in Pune for pipe leak repairs, tap fitting, drain unblocking, and water heater installation. Fast doorstep service across Pune & PCMC.",
     schemaType: "Plumber",
     estimatedTime: "45 - 90 mins",
     capabilities: [
@@ -46,16 +46,16 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: "How fast can a plumber arrive at my location?",
-        answer: "In our core service areas of Hoshangabad and Bhopal, verified plumbers typically arrive within 60 to 90 minutes from confirmed booking time, with priority scheduling available for emergency leaks.",
+        question: "How fast can a plumber arrive at my location in Pune?",
+        answer: "Across major Pune localities and PCMC, verified plumbers typically arrive within 45 to 90 minutes from confirmed booking time, with priority scheduling available for emergency leaks.",
       },
       {
         question: "Are spare parts and materials included in the service cost?",
         answer: "The listed rate covers expert inspection and labor. If replacement pipes, valves, or fixtures are necessary, our technician provides a clear, itemized quote prior to purchasing with genuine receipts.",
       },
       {
-        question: "Do you offer a satisfaction guarantee on plumbing work?",
-        answer: "Yes, every plumbing job by UWe Service comes with a 30-day workmanship guarantee. If the same issue recurs within 30 days, we revisit and rectify it without additional labor fees.",
+        question: "Do you offer a satisfaction guarantee on plumbing work in Pune?",
+        answer: "Yes, every plumbing job by UWE Services comes with a 30-day workmanship guarantee. If the same issue recurs within 30 days, we revisit and rectify it without additional labor fees.",
       },
     ],
   },
@@ -68,8 +68,8 @@ export const services: Service[] = [
     image: "https://images.unsplash.com/photo-1660330590022-9f4ff56b63f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2lhbiUyMHdvcmtpbmclMjByZXNpZGVudGlhbCUyMGhvbWV8ZW58MXx8fHwxNzc1NjIyMDM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     features: ["Wiring & rewiring", "Lighting installation", "Circuit breaker repair", "Safety inspections"],
     popular: true,
-    metaTitle: "Licensed Electrician Near Me | Home Wiring Services | UWe Service",
-    metaDescription: "Hire verified local electricians for home wiring, switchboard replacement, MCB tripping troubleshooting, and fan fitting in Hoshangabad, Bhopal & Pune.",
+    metaTitle: "Licensed Electrician Near Me in Pune | Home Wiring Services | UWE Services",
+    metaDescription: "Hire verified local electricians in Pune for home wiring, switchboard replacement, MCB tripping troubleshooting, and fan fitting across Pune & PCMC.",
     schemaType: "Electrician",
     estimatedTime: "45 - 120 mins",
     capabilities: [
@@ -82,12 +82,12 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: "Are your electricians licensed and safety-trained?",
-        answer: "Yes. All UWe Service electricians are background-verified and experienced in residential electrical safety regulations to guarantee hazard-free repairs.",
+        question: "Are your electricians in Pune licensed and safety-trained?",
+        answer: "Yes. All UWE Services electricians are background-verified and experienced in residential electrical safety regulations to guarantee hazard-free repairs.",
       },
       {
         question: "What should I do if a switchboard or wire starts sparking?",
-        answer: "Please immediately turn off your home's main MCB breaker on the distribution board to isolate the power, then book our emergency electrical visit or call our helpline directly.",
+        answer: "Please immediately turn off your home's main MCB breaker on the distribution board to isolate the power, then book our emergency electrical visit or call our helpline directly at +91-9109888774.",
       },
       {
         question: "Can an electrician install appliances bought separately?",
@@ -104,8 +104,8 @@ export const services: Service[] = [
     image: "https://images.unsplash.com/photo-1758273238594-9a9d6c20eaa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZSUyMGNsZWFuaW5nJTIwc2VydmljZSUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzU2MzM0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     features: ["Deep cleaning", "Regular maintenance", "Move-in/out cleaning", "Eco-friendly products"],
     popular: true,
-    metaTitle: "House Cleaning & Maid Services Near Me | UWe Service",
-    metaDescription: "Professional home deep cleaning, maid services, kitchen degreasing, bathroom scrubbing, and sofa shampooing in Hoshangabad, Bhopal & Pune. Eco-friendly products used.",
+    metaTitle: "House Cleaning & Maid Services in Pune | UWE Services",
+    metaDescription: "Professional home deep cleaning, maid services, kitchen degreasing, bathroom scrubbing, and sofa shampooing in Pune. Eco-friendly products used.",
     schemaType: "HouseCleaning",
     estimatedTime: "2 - 5 hours",
     capabilities: [
@@ -119,7 +119,7 @@ export const services: Service[] = [
     faqs: [
       {
         question: "Do I need to arrange cleaning supplies or equipment?",
-        answer: "No. Our cleaning teams arrive with high-suction vacuum cleaners, specialized scrubbing pads, microfibers, and eco-friendly cleaning detergents.",
+        answer: "No. Our cleaning teams in Pune arrive with high-suction vacuum cleaners, specialized scrubbing pads, microfibers, and eco-friendly cleaning detergents.",
       },
       {
         question: "How long does a full home deep cleaning take?",
@@ -136,8 +136,8 @@ export const services: Service[] = [
     image: "https://images.unsplash.com/photo-1630481721508-5d37097dd8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxodmFjJTIwdGVjaG5pY2lhbiUyMGFpciUyMGNvbmRpdGlvbmluZ3xlbnwxfHx8fDE3NzU1Nzg4ODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     features: ["AC repair & installation", "Furnace maintenance", "Duct cleaning", "Thermostat setup"],
     popular: true,
-    metaTitle: "AC Repair & Servicing Near Me | Gas Refill | UWe Service",
-    metaDescription: "Expert split and window AC repair, deep jet wash servicing, cooling diagnostics, and refrigerant gas refill in Hoshangabad, Bhopal & Pune by verified technicians.",
+    metaTitle: "AC Repair & Servicing in Pune | Gas Refill & Jet Service | UWE Services",
+    metaDescription: "Expert split and window AC repair, deep jet wash servicing, cooling diagnostics, and refrigerant gas refill in Pune by verified technicians.",
     schemaType: "HVACBusiness",
     estimatedTime: "60 - 90 mins",
     capabilities: [
@@ -151,10 +151,10 @@ export const services: Service[] = [
     faqs: [
       {
         question: "Why is my AC running but not cooling the room?",
-        answer: "The most common causes are clogged dust filters restricting airflow, low refrigerant gas due to piping leaks, or a weak outdoor compressor capacitor. Our technician pinpoints the exact cause on arrival.",
+        answer: "The most common causes are clogged dust filters restricting airflow, low refrigerant gas due to piping leaks, or a weak outdoor compressor capacitor. Our Pune technician pinpoints the exact cause on arrival.",
       },
       {
-        question: "What is included in an AC jet service?",
+        question: "What is included in an AC jet service in Pune?",
         answer: "An AC jet service includes deep indoor coil cleaning using high-pressure water jacket equipment, outdoor condenser fin cleaning, blower wheel wash, drain pipe clearing, and overall cooling performance checks.",
       },
     ],
@@ -167,8 +167,8 @@ export const services: Service[] = [
     icon: Paintbrush,
     image: "https://images.unsplash.com/photo-1752649937956-f2c09651bf7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwYWludGVyJTIwcGFpbnRpbmclMjB3YWxsfGVufDF8fHx8MTc3NTY0MjY4Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     features: ["Interior painting", "Exterior painting", "Cabinet refinishing", "Color consultation"],
-    metaTitle: "House Painting & Waterproofing Services | UWe Service",
-    metaDescription: "Professional interior and exterior house painting, wall putty, primer, and damp-proofing in Hoshangabad, Bhopal & Pune. Flawless finish by skilled painters.",
+    metaTitle: "House Painting & Waterproofing Services in Pune | UWE Services",
+    metaDescription: "Professional interior and exterior house painting, wall putty, primer, and damp-proofing in Pune. Flawless finish by skilled painters.",
     schemaType: "HousePainter",
     estimatedTime: "1 - 3 days",
     capabilities: [
@@ -194,8 +194,8 @@ export const services: Service[] = [
     icon: Hammer,
     image: "https://images.unsplash.com/photo-1728633826211-4e04854e344e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJwZW50ZXIlMjB3b29kd29ya2luZyUyMGZ1cm5pdHVyZXxlbnwxfHx8fDE3NzU1Nzg4ODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     features: ["Custom furniture", "Door & window repair", "Deck building", "Furniture assembly"],
-    metaTitle: "Carpentry Services & Furniture Repair Near Me | UWe Service",
-    metaDescription: "Book experienced carpenters for door lock repair, modular furniture assembly, wardrobe hinge fixes, and custom woodwork in Hoshangabad, Bhopal & Pune.",
+    metaTitle: "Carpentry Services & Furniture Repair Near Me in Pune | UWE Services",
+    metaDescription: "Book experienced carpenters in Pune for door lock repair, modular furniture assembly, wardrobe hinge fixes, and custom woodwork across Pune & PCMC.",
     schemaType: "HomeAndConstructionBusiness",
     estimatedTime: "1 - 3 hours",
     capabilities: [
@@ -220,8 +220,8 @@ export const services: Service[] = [
     icon: Trees,
     image: "https://images.unsplash.com/photo-1721318308400-fd8da6c51efe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYW5kc2NhcGVyJTIwZ2FyZGVuJTIwbWFpbnRlbmFuY2V8ZW58MXx8fHwxNzc1NjQyNjg2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     features: ["Lawn mowing", "Garden design", "Tree trimming", "Seasonal cleanup"],
-    metaTitle: "Landscaping & Garden Maintenance Services | UWe Service",
-    metaDescription: "Keep your garden lush with lawn mowing, hedge trimming, weed removal, and soil nourishment by UWe Service gardeners in Hoshangabad, Bhopal & Pune.",
+    metaTitle: "Landscaping & Garden Maintenance Services in Pune | UWE Services",
+    metaDescription: "Keep your garden lush with lawn mowing, hedge trimming, weed removal, and soil nourishment by UWE Services gardeners in Pune.",
     schemaType: "HomeAndConstructionBusiness",
     estimatedTime: "2 - 4 hours",
     capabilities: [
@@ -246,8 +246,8 @@ export const services: Service[] = [
     icon: Bug,
     image: "https://images.unsplash.com/photo-1687840936382-7333b7d26fca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXN0JTIwY29udHJvbCUyMHByb2Zlc3Npb25hbCUyMGhvbWV8ZW58MXx8fHwxNzc1NjQyNjg3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     features: ["Insect removal", "Rodent control", "Preventive treatments", "Eco-friendly options"],
-    metaTitle: "Pest Control & Termite Treatment Near Me | UWe Service",
-    metaDescription: "Protect your home with certified, odorless cockroach, termite, and bed bug pest control treatments in Hoshangabad, Bhopal & Pune.",
+    metaTitle: "Pest Control & Termite Treatment Near Me in Pune | UWE Services",
+    metaDescription: "Protect your home with certified, odorless cockroach, termite, and bed bug pest control treatments in Pune by UWE Services.",
     schemaType: "HomeAndConstructionBusiness",
     estimatedTime: "60 - 90 mins",
     capabilities: [
