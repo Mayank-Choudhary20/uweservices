@@ -1,6 +1,6 @@
 ﻿import { Outlet, Link, useLocation } from "react-router";
 import { Logo } from "./Logo";
-import { Menu, X, Home, Briefcase, Phone, Mail, MapPin, Smartphone } from "lucide-react";
+import { Menu, X, Home, Briefcase, Phone, Mail, MapPin, Smartphone, Users } from "lucide-react";
 import { useState } from "react";
 
 export function Layout() {
@@ -11,6 +11,7 @@ export function Layout() {
     { path: "/", label: "Home", icon: Home },
     { path: "/services", label: "Services", icon: Briefcase },
     { path: "/locations/pune", label: "Pune Hub", icon: MapPin },
+    { path: "/about", label: "About", icon: Users },
     { path: "/contact", label: "Contact", icon: Mail },
   ];
 
@@ -148,6 +149,11 @@ export function Layout() {
                 <li>
                   <Link to="/locations/pune" className="hover:text-orange-400 transition-colors">
                     Pune Service Areas
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="hover:text-orange-400 transition-colors">
+                    About Us
                   </Link>
                 </li>
                 <li>

@@ -6,6 +6,7 @@ import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { TermsAndConditions } from "./pages/TermsAndConditions";
 import { RefundPolicy } from "./pages/RefundPolicy";
 import { ContactUs } from "./pages/ContactUs";
+import { AboutPage } from "./pages/AboutPage";
 import { LocationPage } from "./pages/LocationPage";
 import { LocationsHubPage } from "./pages/LocationsHubPage";
 import { Layout } from "./components/Layout";
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
     Component: Layout,
     children: [
       { index: true, Component: HomePage },
+      { path: "about", Component: AboutPage },
       { path: "services", Component: ServicesPage },
       { path: "services/:serviceId", Component: ServicesPage },
       { path: "locations", Component: LocationsHubPage },
